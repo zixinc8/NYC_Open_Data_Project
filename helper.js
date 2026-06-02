@@ -2,8 +2,6 @@ function get(id){
   return document.getElementById(id);
 }
 
-let lat, lon;
-
 function card(info){ 
     let build = `<div class="card fitted">
                     <h3>${info.legalbusinessname}</h3>
@@ -22,6 +20,9 @@ function card(info){
         if(info.latitude && info.longitude){
           lat = `${info.latitude}`;
           lon = `${info.longitude}`;
+          const urlParams = new URLSearchParams(window.location.search);
+          const A = parseFloat(urlParams.get('lat'));
+          const O = parseFloat(urlParams.get('log'));
         }
      return build;
 }

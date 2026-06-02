@@ -9,25 +9,35 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
         <script src="helper.js"></script>
         <script src="script.js"></script>
+        <link href="c3.css" rel="stylesheet" type="text/css" />
+        <script src="c3.js"></script>
+        <script src="d3.js"></script> 
     </head>
 
     <body onload="init()"></body>
-    <body>
+        <div id="banner" class="container center">
+            <h1> Restaurants Inspections </h1>
+        </div>
+
         <nav class="container">
-        <a href="index.html"> Home </a>
-        <a href="info.html"> Info </a>
-        <a href="analysis.html"> Analysis </a>
+            <a href="index.html"> Home </a>
+            <a href="info.html"> Info </a>
+            <a href="analysis.html"> Analysis </a>
         </nav>
 
         <div class="container">
-        <a class="button" onclick="displayMap()"> View </a>
-        </div>
+      <p><span class="highlight">Scenario:</span>Chart analyzes the number of complaints by boroughs.</p>
+      <select id="chartType" style="width:200px;">
+        <option>Select Chart Type</option>
+        <option value="bar">Bar</option>
+        <option value="donut">Donut</option>
+      </select>
+      <a class="button" onclick="complaintsByBorough()"> Display </a>
+    </div>
 
-        <div id="output" class="container">
-            <div id="map"></div>
-        </div>
+    <div class="container subbanner"><br></div>
 
-
+    <div id="output"></div>
 
     </body>
 </html>

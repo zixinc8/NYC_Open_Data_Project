@@ -9,14 +9,20 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
         <script src="helper.js"></script>
         <script src="script.js"></script>
+        <link href="c3.css" rel="stylesheet" type="text/css" />
+        <script src="c3.js"></script>
+        <script src="d3.js"></script> 
     </head>
 
     <body onload="init()"></body>
-    <body>
+        <div id="banner" class="container center">
+            <h1> Restaurants Inspections </h1>
+        </div>
+
         <nav class="container">
-        <a href="index.html"> Home </a>
-        <a href="info.html"> Info </a>
-        <a href="analysis.html"> Analysis </a>
+            <a href="index.html"> Home </a>
+            <a href="info.html"> Info </a>
+            <a href="analysis.html"> Analysis </a>
         </nav>
 
         <div>
@@ -25,6 +31,7 @@
 
         <div id="output" class="container">
             <div id="leftPanel" class="container"></div>
+            <div id="map"></div>
         </div>
 
     </body>

@@ -3,7 +3,7 @@ html,body{
   font-family:Arial;
 }
 input[type=text]{
-  border: 2px solid red;
+  border: 2px solid rgb(43, 37, 122);
   border-radius: 4px;
 }
 .container{
@@ -46,7 +46,7 @@ nav a:hover{
 }
  #leftPanel{
    flex:1;
-   max-height:600px;;
+   max-height:800px;;
    overflow-y:scroll;
  }
 .card{
@@ -60,7 +60,7 @@ nav a:hover{
 #map{
   flex:1;
   width:90%;
-  height:400px;
+  height:600px;
   border-radius:10px;
   box-shadow:2px 2px 2px black;
 }
@@ -109,3 +109,27 @@ nav a:hover{
   box-shadow:2px 2px 2px gray;
 }
 
+.one{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+  background-color:rgb(181, 197, 248);
+}
+#two{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+  background-color:rgb(140, 167, 255);
+}
+.three{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+  background-color:rgb(119, 128, 255);
+}
